@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Angular Todo Management",
+  "description": "You can manage your todos here",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*", 
+    "*://*/*" 
+  ],
+  "permissions": [],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "sandbox": "sandbox allow-scripts allow-forms"
+  }
+}
